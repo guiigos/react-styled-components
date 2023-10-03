@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import '@theme-toggles/react/css/classic.css';
+import '@theme-toggles/react/css/Classic.css';
 
 export const GlobalStyles = createGlobalStyle`
   * {
