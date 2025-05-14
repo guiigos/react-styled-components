@@ -1,4 +1,5 @@
 # React Styled Components
+
 This simple project was created to exemplify the use of multiple styles within an application with **react** and [*styled-components*](https://github.com/styled-components). This project has no functional objective, just a brief implementation example.
 
 <details>
@@ -16,6 +17,7 @@ This simple project was created to exemplify the use of multiple styles within a
 
 ## Usage
 ### Dependencies
+
 Install dependencies and modules.
 
 ```bash
@@ -23,6 +25,7 @@ $ npm install
 ```
 
 ### Scripts
+
 After installing the dependencies the application is ready to run.
 
 ```bash
@@ -31,6 +34,7 @@ $ npm run dev
 ```
 
 ## License
+
 Project developed for academic purposes.
 
 [![License: MIT](https://img.shields.io/github/license/guiigos/react-styled-components?style=flat-square)](./LICENSE)
