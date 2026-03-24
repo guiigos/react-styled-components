@@ -1,9 +1,9 @@
-import { Classic } from '@theme-toggles/react';
-import styled, { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from './styles/global';
-import ThemeContextProvider, { Action, ThemeContext } from './context/ThemeContext';
+import { Classic } from "@theme-toggles/react";
+import styled, { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./styles/global";
+import ThemeContextProvider, { Action, ThemeContext } from "./context/ThemeContext";
 
-import * as theme from './styles/theme';
+import * as theme from "./styles/theme";
 
 const Header = styled.header`
   height: 50px;
@@ -25,7 +25,7 @@ function App() {
     <ThemeContextProvider>
       <ThemeContext.Consumer>
         {(ctx) => {
-          const isLight = ctx.state.theme === 'light';
+          const isLight = ctx.state.theme === "light";
 
           return (
             <ThemeProvider theme={theme[ctx.state.theme]}>

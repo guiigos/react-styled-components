@@ -1,12 +1,12 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useReducer } from "react";
 
 export enum Action {
-  SET_DARK = 'SET_DARK',
-  SET_LIGHT = 'SET_LIGHT',
+  SET_DARK = "SET_DARK",
+  SET_LIGHT = "SET_LIGHT",
 };
 
 export type State = {
-  theme: 'light' | 'dark';
+  theme: "light" | "dark";
 };
 
 export const ThemeContext = createContext<{
@@ -14,7 +14,7 @@ export const ThemeContext = createContext<{
   dispatch: React.Dispatch<Action>,
 }>({
   state: {
-    theme: 'light'
+    theme: "light"
   },
   dispatch: () => {},
 });
@@ -24,16 +24,16 @@ const ThemeContextProvider: React.FC<React.PropsWithChildren> = ({ children }): 
     switch (action) {
       case Action.SET_DARK:
         return {
-          theme: 'dark',
+          theme: "dark",
         };
         case Action.SET_LIGHT:
           return {
-            theme: 'light',
+            theme: "light",
           };
       default:
         return state;
     }
-  }, { theme: 'light' });
+  }, { theme: "light" });
 
   return (
     <ThemeContext.Provider value={{
